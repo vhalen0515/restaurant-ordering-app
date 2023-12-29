@@ -1,0 +1,53 @@
+<html lang = "en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <h2>The best burgers in town</h2>
+        </header>
+        
+        <section id="food-items-container"></section>
+        
+        <section id="order-container">
+            <h3 class="order-heading">Your Order</h3>
+            <div id="order-summary"></div>
+            <div class="checkout-total">
+                <h3>Total price:</h3>
+                <h4 id="total-price"></h4>
+            </div>
+            <button id="complete-order-btn">Complete order</button>
+        </section>
+
+        <div id="outer-pop-up-container">
+            <div id="inner-pop-up-container">
+                <div id="close-btn-container">
+                    <button id="close-btn">X</button>
+                </div>
+                <h2>Enter card details</h2>
+                <form id="form-information">
+                    <input type="text" class="input-box" placeholder="Enter your name" name="name" required />
+                    <input type="text" class="input-box" placeholder="Enter card number" name="card" required />
+                    <input type="text" class="input-box" placeholder="Enter CVV" name="cvv" required />
+                    <button id="pay-btn" type="submit">Pay</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="thank-you-text">
+            <h3>Thanks, Trent!  Your order is on it's way!</h3>
+        </div>
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
